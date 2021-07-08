@@ -97,7 +97,7 @@
     }
     
     // convert image to jpeg representation
-    result.data = UIImageJPEGRepresentation(result.image, [compressQuality floatValue]);
+    result.data = UIImagePNGRepresentation(result.image);
     
     return result;
 }
