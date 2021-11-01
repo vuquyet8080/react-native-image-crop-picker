@@ -66,7 +66,7 @@ class Compression {
         File resizeImageFile = new File(imageDirectory, UUID.randomUUID() + ".jpg");
 
         OutputStream os = new BufferedOutputStream(new FileOutputStream(resizeImageFile));
-        resized.compress(Bitmap.CompressFormat.JPEG, quality, os);
+        resized.compress(Bitmap.CompressFormat.PNG, quality, os);
 
         os.close();
         original.recycle();
